@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+*{
+    font-family: Tahoma, sans-serif;
+ }
+.container{
+    width: 1200px;
+    border: 1px solid rgb(235, 233, 233);
+    margin: auto;
+    
+}
+
+.img-small{    
+    height: 50px;
+}
+.img-photo{    
+    height: 200px;
+}
+.img-medium{    
+    height: 100px;
+}
+nav ul {
+    display: table;
+    padding: 0;
+    width: 100%;
+    
+}
+nav ul li {
+    display: table-cell;
+    
+}
+nav ul li a{    
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    background: rgb(170, 109, 194);
+    font-size: 20px;
+    color: white;
+}
+
+.cols{
+    display: table;
+    width: 100%;    
+}
+.col{
+    width: 25%;
+    margin: auto;
+    display: table-cell;
+    text-align: center;
+    
+}
+
+.shedule{
+    text-align: center;
+}
+.shedule tr:last-child td:last-child {
+    background: rgb(245, 186, 215);
+    border-radius: 10px;
+    
+} 
+.item-title{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.img-estate-info{
+    width: 200px;
+    float: left;
+    margin: 10px;
+}
+.item-description{
+    margin: 10px;
+}
+.estate-item{
+    margin: 10px 20px 10px;        
+    display: table;
+}
+.price{
+    float: right;
+    font-size: 20px;
+}
+
+.span-price{
+    text-transform: uppercase;      
+}
+.cost{
+    text-decoration: underline;
+}
