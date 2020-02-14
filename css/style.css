@@ -4,13 +4,83 @@
 *{
     font-family: Tahoma, sans-serif;
  }
+ body{
+    color: #000;
+    font: 400 16px/25px "Open Sans", sans-serif;
+ }
 .container{
     width: 1200px;
     border: 1px solid rgb(235, 233, 233);
     margin: auto;
     
 }
+iframe{
+    border : 0;
+}
 
+
+nav a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  nav a:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #365699;
+    content: '';
+    opacity: 0;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  a:hover::after, a:focus::after {
+    height: 5px;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  a:focus {
+    outline: none;
+  }
+  a:active {
+    background-color: transparent;
+  }
+  
+  
+  a[href^="mailto:"],
+  a[href^="tel:"],
+  a[href^="callto:"] {
+    color: inherit;
+    text-decoration: none;
+  }
+  a[href^="mailto:"]:hover,
+  a[href^="tel:"]:hover,
+  a[href^="callto:"]:hover {
+    color: #365699;
+  }
+  a[href^="mailto:"]:hover::after, a[href^="mailto:"]:focus::after,
+  a[href^="tel:"]:hover::after,
+  a[href^="tel:"]:focus::after{
+    height: 5px;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
 .img-small{    
     height: 50px;
 }
@@ -20,27 +90,21 @@
 .img-medium{    
     height: 100px;
 }
+nav{
+    padding-top: 21px;
+    padding-bottom: 19px;
+}
 nav ul {
     display: table;
-    padding: 0;
+    padding: 0px;
     width: 100%;
+    text-align: center;
     
 }
 nav ul li {
     display: table-cell;
     
 }
-nav ul li a{    
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    line-height: 50px;
-    background: rgb(170, 109, 194);
-    font-size: 20px;
-    color: white;
-}
-
 .cols{
     display: table;
     width: 100%;    
@@ -61,32 +125,139 @@ nav ul li a{
     border-radius: 10px;
     
 } 
-.item-title{
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    margin: 10px 0;
+.sidebar-right{     
+   width: 20%;  
+   display: table-cell;
+   
 }
-.img-estate-info{
-    width: 200px;
-    float: left;
-    margin: 10px;
+.page-content{
+    margin-right:20%;
+    display: table-cell;
 }
-.item-description{
-    margin: 10px;
-}
-.estate-item{
-    margin: 10px 20px 10px;        
+main .container{
     display: table;
 }
-.price{
-    float: right;
-    font-size: 20px;
+.search-square, .search-price, .search-compas{
+    width: 100%;    
+}
+.product{
+    padding-bottom: 20px;
+}
+.product-img{
+    width: 200px;
+}
+.product-item{
+    display: table-row;
+    width: 100%;
+}
+.product-info{
+    display: table-cell;    
+    width: 50%;
+}
+.product-photo{
+    display: table-cell;
+    width: 20%;
+    padding-right: 20px;
+    text-align: right;    
+}
+.product-metric{
+    display: table; 
+    width: 100%;
 }
 
-.span-price{
-    text-transform: uppercase;      
+.product-rooms{
+    display: table-cell;
+    width: 25%;
 }
-.cost{
+.product-type-house{
+    display: table-cell;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+.product-level{
+    display: table-cell;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+.product-square{
+    display: table-cell;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+.product-photo{
+    vertical-align: middle;
+}
+.product-footer{
+    display: table-row;
+    width: 100%;
+    margin-top: 10px;
+}
+.product-address{
+    display: table-cell;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+.offer{
+    display: table-cell;
+    width: 20%;    
+    padding-right: 20px;
+    text-align: right;  
     text-decoration: underline;
+}
+.d-header{
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+.product-map, .product-address-text{
+    margin-left: 10px;
+}
+
+header{
+    border-bottom: 3px solid #365699;
+    text-align: left;
+    background: #365699;    
+}
+header  {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;   
+    width: 100%; 
+}
+  
+nav li a{   
+    font-size: 18px;
+    line-height: 1.11111;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #000;
+    
+}
+
+nav a:active {color: #365699;}  
+nav a:hover { color: #365699; } 
+footer{
+    
+    background: #151a1d;
+    color: #6f7679;
+}
+
+footer nav a {
+    font-weight: 700;
+    color: #fff;    
+}
+
+footer nav a:active {color: #365699;}  
+footer nav a:hover { color: #365699; } 
+
+ol, li {
+padding:0px;
+margin:0px;
 }
