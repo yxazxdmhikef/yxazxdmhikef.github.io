@@ -140,6 +140,10 @@ main .container{
 .search-square, .search-price, .search-compas{
     width: 100%;    
 }
+
+.products{
+    padding-left: 20px;
+}
 .product{
     padding-bottom: 20px;
 }
@@ -220,11 +224,11 @@ header{
     border-bottom: 3px solid #365699;
     text-align: left;
     background: #365699;    
+    padding: 20px 20px;
 }
 header  {
     display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 18px;  
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -1px;   
@@ -260,4 +264,67 @@ footer nav a:hover { color: #365699; }
 ol, li {
 padding:0px;
 margin:0px;
+}
+.main-header {
+    display: table;    
+}
+.main-header a{
+    display: table-cell;   
+}
+.main-header h1{
+    display: table-cell;      
+    padding-left: 20px;
+}
+
+.rd-mailform-cols{
+    display: table;    
+    width: 100%;
+}
+
+.rd-mailform .rd-mailform-col{
+    display: table-cell;  
+    width: 50%;
+}
+.foo-info{
+    display: table;    
+    width: 100%;
+}
+.foo-info .i-main{
+    display: table-cell; 
+    padding: 20px 20px;   
+}
+
+.foo-info .i-main:first-child{
+    text-align: left;
+}
+.foo-info .i-main:last-child{
+    text-align: right;
+}
+.r-m-table{
+    display: table;
+    width: 100%;
+}
+.m-row{
+    display: table-row;
+    width: 100%;
+}
+.m-cell{
+    display: table-cell;
+    width: 50%;
+}
+.rd-mailform{
+    padding: 10px;
+}
+
+.rd-mailform .row{   
+    width: 100%;
+    padding: 10px;
+}
+.rd-mailform input, .rd-mailform textarea{
+    vertical-align: top;
+    width: 100%;    
+}
+.row-btn{
+    text-align: right;
+    padding: 10px;
 }
