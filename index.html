@@ -4,14 +4,14 @@
     <meta charset="UTF-8">    
     <title>Агенство недвижимости МАРИНЭЛЬ: недвижимость в Москве – аренда, продажа, покупка недвижимости.</title>
     <link rel="stylesheet" href="/css/style.css" />   
-    <link rel="stylesheet" href="/css/mobile.css" />   
+    <link rel="stylesheet" href="/css/mobile.css" />      
     <script src="/js/script.js"></script>    
 </head>
 <body>
     <div class="container">
         <header>
             <div class="main-header"> 
-                <a href="/"><img src="/img/logo.svg" alt="Логотип - дом" class="img-small"/></a>
+                <a href="/"><img src="/img/logo.svg" alt="Логотип - дом" class="img-small logo"/></a>
                 <h1>Главная</h1>
             </div>            
         </header>
@@ -29,6 +29,62 @@
     </div>  
     <div class="container">
         <main>
+             <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/carusel1.jpg" alt="Коттеджи в частном секторе" />
+                    <div class="text">Коттеджи в частном секторе</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/carusel2.jpg" alt="Дома в пригороде" />
+                    <div class="text">Дома в пригороде</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/carusel3.jpg" alt="Квартиры премиум класса"/>
+                    <div class="text">Квартиры премиум класса</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> 
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+            </script>
+        
             <div class="content">
                 <p><strong>Агентство недвижимости МАРИНЭЛЬ</strong> — <em>все риэлторские услуги</em>: купля, продажа, обмен, аренда жилой и коммерческой недвижимости Москвы и Подмосковья, помощь в получении ипотеки.
                     Защита интересов наших клиентов и юридическая чистота проводимых сделок позволяют нам уже 28 лет занимать лидирующее место на рынке!</p>
@@ -48,14 +104,56 @@
     <div class="container">
         <footer>  
             <nav>
-                <ul>           
-                  <li><a href="/">Главная</a></li>               
-                  <li><a href="/about.html">О компании</a></li>    
-                  <li><a href="/catalog.html" >Каталог</a></li>          
-                  <li><a href="/contact.html" >Контакты</a></li>        
-                  <li><a href="/service.html" >Услуги</a></li>
-                </ul>
-              </nav>
+                <div class="foo-nav-cols">
+                    <div class="foo-nav-col">
+                        <ul>
+                            <li>Навигация
+                                <ul class>           
+                                    <li><a href="/">Главная</a></li>               
+                                    <li><a href="/about.html">О компании</a></li>    
+                                    <li><a href="/catalog.html" >Каталог</a></li>          
+                                    <li><a href="/contact.html" >Контакты</a></li>        
+                                    <li><a href="/service.html" >Услуги</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="foo-nav-col">
+                        <ul>
+                            <li>Наши офисы
+                                <ul>           
+                                    <li><a href="#">Белорусско-Савеловский 3-я ул. Ямского Поля, д. 32, 1-й подъезд, 5-й этаж</a></li>               
+                                    <li><a href="#">Радио ул. Радио, д.24, корпус 1, 2-ой подъезд, 2-ой этаж</a></li>    
+                                    <li><a href="#">Таганский ул. Воронцовская, д. 35Б, корп.2, 5-ый этаж</a></li>         
+                                    
+                                </ul>
+                            </li>                           
+                        </ul>
+                    </div>
+                    <div class="foo-nav-col">
+                        <ul>
+                            <li>Недвижимость
+                                <ul>           
+                                    <li><a href="#">Дома</a></li>               
+                                    <li><a href="#">Квартиры</a></li>  
+                                    <li><a href="#">Коттеджи</a></li>           
+                                    <li><a href="#">Земельные участки</a></li>     
+                                </ul>
+                            </li>  
+                            <li>Аренда нежидых помещений
+                                <ul>           
+                                    <li><a href="#">Студии</a></li>               
+                                    <li><a href="#">Здания</a></li>    
+                                    <li><a href="#">Кв.м</a></li>        
+                                </ul>
+                            </li>                           
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+           
+
               <div class="foo-info">
                 <div class="i-main">
                     <div>

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">    
     <title>Агенство недвижимости МАРИНЭЛЬ: о компании.</title>
     <link rel="stylesheet" href="/css/style.css" />   
-    <link rel="stylesheet" href="/css/mobile.css" />   
+    <link rel="stylesheet" href="/css/mobile.css" />
     <script src="/js/script.js"></script>    
 </head>
 <body>
     <div class="container">
         <header>
             <div class="main-header"> 
-                <a href="/"><img src="/img/logo.svg" alt="Логотип - дом" class="img-small"/></a>
+                <a href="/"><img src="/img/logo.svg" alt="Логотип - дом" class="img-small logo"/></a>
                 <h1>О компании и сотрудниках</h1>
             </div>            
         </header>
@@ -31,10 +31,10 @@
         <main>
         <div>
             <h2>Руководство</h2>
-            <div>
+            <div class = "employee-photo">
                 <h3>Генеральный директор</h3>
                 <p>Марианна Иванова</p>
-                <img src="/img/director.png" alt="Генеральный директор Марианна Иванова" class="img-photo"/>
+                <img src="/img/director.png" alt="Генеральный директор Марианна Иванова" class="img-big"/>
             </div> 
             <div>
                 <h2>История</h2>            
@@ -50,22 +50,22 @@
                 <h2>Наши ценности</h2>            
                 <div class ="cols">       
                     <div class="col">
-                      <img src="/img/medal.svg" alt="иконка качества" class="img-medium"/>
+                      <img src="/img/medal.svg" alt="иконка качества" class="img-small"/>
                       <h3>Качество</h3>     
                       <p>Мы постоянно совершенствуемся</p>                   
                     </div>     
                     <div class="col">
-                        <img src="/img/tropy.svg" alt="иконка опыта" class="img-medium"/>
+                        <img src="/img/tropy.svg" alt="иконка опыта" class="img-small"/>
                         <h3>Опыт</h3>     
                         <p>20 лет на рынке недвижимости</p>                   
                     </div>     
                     <div class="col">
-                        <img src="/img/bag.svg" alt="иконка профессионализма" class="img-medium"/>
+                        <img src="/img/bag.svg" alt="иконка профессионализма" class="img-small"/>
                         <h3>Профессионализм</h3>     
                         <p>Мы эксперты рынка недвижимости</p>                   
                     </div>     
                     <div class="col">
-                        <img src="/img/laptop.svg" alt="иконка инноваций" class="img-medium"/>
+                        <img src="/img/laptop.svg" alt="иконка инноваций" class="img-small"/>
                         <h3>Инновации</h3>     
                         <p>Мы думаем на 10 лет вперед</p>                   
                     </div> 
@@ -78,14 +78,56 @@
     <div class="container">
         <footer>  
             <nav>
-                <ul>           
-                  <li><a href="/">Главная</a></li>               
-                  <li><a href="/about.html">О компании</a></li>    
-                  <li><a href="/catalog.html" >Каталог</a></li>          
-                  <li><a href="/contact.html" >Контакты</a></li>        
-                  <li><a href="/service.html" >Услуги</a></li>
-                </ul>
-              </nav>
+                <div class="foo-nav-cols">
+                    <div class="foo-nav-col">
+                        <ul>
+                            <li>Навигация
+                                <ul class>           
+                                    <li><a href="/">Главная</a></li>               
+                                    <li><a href="/about.html">О компании</a></li>    
+                                    <li><a href="/catalog.html" >Каталог</a></li>          
+                                    <li><a href="/contact.html" >Контакты</a></li>        
+                                    <li><a href="/service.html" >Услуги</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="foo-nav-col">
+                        <ul>
+                            <li>Наши офисы
+                                <ul>           
+                                    <li><a href="#">Белорусско-Савеловский 3-я ул. Ямского Поля, д. 32, 1-й подъезд, 5-й этаж</a></li>               
+                                    <li><a href="#">Радио ул. Радио, д.24, корпус 1, 2-ой подъезд, 2-ой этаж</a></li>    
+                                    <li><a href="#">Таганский ул. Воронцовская, д. 35Б, корп.2, 5-ый этаж</a></li>         
+                                    
+                                </ul>
+                            </li>                           
+                        </ul>
+                    </div>
+                    <div class="foo-nav-col">
+                        <ul>
+                            <li>Недвижимость
+                                <ul>           
+                                    <li><a href="#">Дома</a></li>               
+                                    <li><a href="#">Квартиры</a></li>  
+                                    <li><a href="#">Коттеджи</a></li>           
+                                    <li><a href="#">Земельные участки</a></li>     
+                                </ul>
+                            </li>  
+                            <li>Аренда нежидых помещений
+                                <ul>           
+                                    <li><a href="#">Студии</a></li>               
+                                    <li><a href="#">Здания</a></li>    
+                                    <li><a href="#">Кв.м</a></li>        
+                                </ul>
+                            </li>                           
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+           
+
               <div class="foo-info">
                 <div class="i-main">
                     <div>
