@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 *{
@@ -411,6 +410,9 @@ footer nav a:hover { color: #365699; }
     padding: 8px 12px;
     position: absolute;
     top: 0;
+  }
+  .sidebar-dots{
+    text-align:center;
   }
   
   /* The dots/bullets/indicators */

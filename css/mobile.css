@@ -1,0 +1,66 @@
+@media screen and (max-width:768px){
+
+.container{ 
+    width: 600px;  
+    border: none;
+}
+   
+.col{
+    width: 100%;  
+    display: table;  
+}
+.sidebar-right{     
+    width: 100%;  
+    display: table;
+    
+ }
+ .page-content{
+     margin-right:0px;
+     display: table;
+     width: 100%;
+ }
+
+footer nav{
+    display: none;   
+}
+ 
+.product-info{
+    display: table;    
+    width: 100%;
+}
+.product-photo{
+    display: table;
+    width: 100%;    
+    text-align: left;    
+}
+
+
+.product-footer{
+    display: table-row;
+    width: 100%;
+    margin-top: 10px;
+}
+.product-address{
+    display: table;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+.offer{
+    display: table;
+    width: 100%;  
+    padding-right: 0px;
+    text-align: left;     
+}
+
+.m-cell{
+    display: table;
+    width: 50%;
+}
+.slideshow-container, .sidebar-dots{
+    display: none;
+}
+
+
+} /*end medis*/
+  
