@@ -29,6 +29,8 @@
     </div>  
     <div class="container">
         <main>
+            <div itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name">Агенство недвижимости МАРИНЭЛЬ</span>            
             <p>Основной профиль деятельности офиса — услуги по операциям на рынке готовой городской и загородной недвижимости, ипотечного кредитования. Проводит межотраслевые сделки ("город - загород").</p>    
             <div>
                 <h2>График работы</h2> 
@@ -69,8 +71,14 @@
             </div>
             <div>
                 <h2>Контакты</h2>                
-                  <div>E-mail: <a href="mailto:info@mariel.ru">info@mariel.ru</a></div>
-                  <div>Телефон: <a href="tel:+74958000000">+7-(495)-800-00-00</a></div>
+                  <div>E-mail: <a href="mailto:info@mariel.ru" itemprop="email">info@mariel.ru</a></div>
+                  <div>Телефон: <a href="tel:+74958000000" itemprop="telephone">+7-(495)-800-00-00</a></div>
+                  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    Адрес:
+                    <span itemprop="streetAddress">ул. Академическая, 16</span>
+                    <span itemprop="postalCode"> 119021</span>
+                    <span itemprop="addressLocality">Москва</span>,
+                  </div>
             </div>
             <div>
                 <h2>Как проехать</h2>
@@ -78,7 +86,8 @@
                 <p>м. «Академическая», 1-й вагон из центра, затем по переходу — налево. Наш офис в 8-этажном административном кирпичном здании (второй дом от метро).</p>
                 <h3>На автомобиле:</h3>
                 <p>по проспекту 60-летия Октября после пересечения с  ул. Дмитрия Ульянова, через 300 метров— разворот в сторону центра. Справа по ходу движения, через 200 м после разворота — 8-этажное административное кирпичное здание, где расположен наш офис</p>
-            </div>        
+            </div>  
+        </div>      
             <iframe src="https://yandex.ru/map-widget/v1/-/CKUye4P-" width="560" height="400" ></iframe>
         
             <div>                
@@ -175,21 +184,24 @@
             </nav>
            
 
-              <div class="foo-info">
+              <div class="foo-info" itemscope itemtype="http://schema.org/Organization">
                 <div class="i-main">
                     <div>
-                        <span>Агентство МАРИНЭЛЬ</span>
+                        <span itemprop="name">Агентство недвижимости МАРИНЭЛЬ</span>
                     </div>                  
                     <div>
                       <span>&copy;2020 Все права защищены.</span>
                   </div>
                 </div>
-                <div class="i-main">
-                  <div>
-                      <span>112255 Академическая д.1/7</span>
+                <div class="i-main" >
+                  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="postalCode"> 119021</span>
+                    <span itemprop="addressLocality">Москва</span>                    
+                    <span itemprop="streetAddress">ул. Академическая, 16</span>
                   </div>                  
                   <div>
-                    <div><a href="mailto:info@mariel.ru">info@mariel.ru</a></div>
+                    <div><a href="tel:+74958000000" itemprop="telephone">+7-(495)-800-00-00</a></div>
+                    <div><a href="mailto:info@mariel.ru" itemprop="email">info@mariel.ru</a></div>
                 </div>
               </div>
               </div>

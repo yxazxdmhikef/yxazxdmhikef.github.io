@@ -470,3 +470,6 @@ footer nav a:hover { color: #365699; }
 li:first-child ul {
     padding-bottom: 10px;
 }
+.hide-info{
+    display: none;;
+}
