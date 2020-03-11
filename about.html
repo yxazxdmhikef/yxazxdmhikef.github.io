@@ -16,11 +16,19 @@
             </div>            
         </header>
         <div class ="general">
-            <nav>
+            <nav class="menu">
                 <ul>           
                   <li><a href="/">Главная</a></li>               
                   <li><a href="/about.html">О компании</a></li>    
-                  <li><a href="/catalog.html" >Каталог</a></li>          
+                  <li class="parent-item-menu">
+                    <a href="/catalog.html" >Каталог</a>
+                    <ul>
+                        <li><a href="#">Квартиры</a></li>
+                        <li><a href="#">Дома</a></li>
+                        <li><a href="#">Земля</a></li>
+                    </ul>               
+
+                </li>                
                   <li><a href="/contact.html" >Контакты</a></li>        
                   <li><a href="/service.html" >Услуги</a></li>
                 </ul>
